@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <!-- Definitions for gradients and patterns -->
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e"/>
+      <stop offset="100%" style="stop-color:#0d47a1"/>
+    </linearGradient>
+    <!-- Circuit pattern -->
+    <pattern id="circuitPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M5 5 L15 5 L15 15 L5 15 Z" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+      <circle cx="5" cy="5" r="1" fill="rgba(255,255,255,0.1)"/>
+      <circle cx="15" cy="15" r="1" fill="rgba(255,255,255,0.1)"/>
+    </pattern>
+  </defs>
+
+  <!-- Main circle with gradient and pattern -->
+  <circle cx="100" cy="100" r="80" fill="url(#mainGradient)"/>
+  <circle cx="100" cy="100" r="80" fill="url(#circuitPattern)"/>
+  
+  <!-- Outer ring with glow effect -->
+  <circle cx="100" cy="100" r="75" fill="none" stroke="#4fc3f7" stroke-width="2" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Modern scales of justice -->
+  <g transform="translate(100,100) scale(0.8)">
+    <!-- Center pillar -->
+    <path d="M0 -40 L0 30" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Balance beam -->
+    <path d="M-30 -40 L30 -40" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Left scale -->
+    <path d="M-30 -40 C-30 -20 -45 -20 -45 -5 L-15 -5 C-15 -20 -30 -20 -30 -40" 
+          fill="none" stroke="#fff" stroke-width="2"/>
+    <circle cx="-30" cy="-5" r="15" fill="none" stroke="#fff" stroke-width="2"/>
+    
+    <!-- Right scale -->
+    <path d="M30 -40 C30 -20 45 -20 45 -5 L15 -5 C15 -20 30 -20 30 -40" 
+          fill="none" stroke="#fff" stroke-width="2"/>
+    <circle cx="30" cy="-5" r="15" fill="none" stroke="#fff" stroke-width="2"/>
+    
+    <!-- Binary/circuit elements -->
+    <text x="-33" y="-2" font-family="monospace" font-size="8" fill="#fff">01</text>
+    <text x="27" y="-2" font-family="monospace" font-size="8" fill="#fff">10</text>
+  </g>
+
+  <!-- Text elements -->
+  <g transform="translate(200,90)">
+    <!-- LOYA text with modern styling -->
+    <text font-family="Arial, sans-serif" font-weight="900" font-size="60" fill="#1a237e">
+      <tspan x="0">L</tspan>
+      <tspan x="35">O</tspan>
+      <tspan x="75">Y</tspan>
+      <tspan x="110">A</tspan>
+    </text>
+    
+    <!-- Tagline with gradient -->
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="20" fill="#0d47a1">
+      AI LEGAL SUPPORT
+    </text>
+    
+    <!-- Decorative underline -->
+    <path d="M0 45 L200 45" stroke="url(#mainGradient)" stroke-width="2">
+      <animate attributeName="stroke-dasharray" values="0,200;200,0" dur="3s" fill="freeze"/>
+    </path>
+  </g>
+
+  <!-- Animated circuit lines in background -->
+  <g opacity="0.1">
+    <path d="M320 160 L360 160 L360 140" fill="none" stroke="#4fc3f7" stroke-width="1">
+      <animate attributeName="stroke-dashoffset" from="60" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M280 140 L300 140 L300 180" fill="none" stroke="#4fc3f7" stroke-width="1">
+      <animate attributeName="stroke-dashoffset" from="60" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

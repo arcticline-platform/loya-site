@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loya - Free Legal Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide-icons@0.10.0/dist/index.min.js"></script>
+    <style>
+        /* You can add custom styles here if needed */
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">L</span>
+                    </div>
+                    <span class="text-2xl font-bold text-blue-900">LOYA</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <button class="text-gray-600 hover:text-blue-600 transition">About</button>
+                    <button class="text-gray-600 hover:text-blue-600 transition">Services</button>
+                    <button class="text-gray-600 hover:text-blue-600 transition">How It Works</button>
+                    <button class="text-gray-600 hover:text-blue-600 transition">Contact</button>
+                </div>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Get
+                    Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-blue-900 mb-6">Free Legal Support for All Ugandans</h1>
+            <p class="text-xl text-gray-600 mb-8">
+                Access instant legal advice powered by AI technology. Available 24/7, in your language, completely free.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button
+                    class="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition flex items-center justify-center">
+                    Get Legal Help Now
+                </button>
+                <button
+                    class="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-gray-50 transition flex items-center justify-center">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Placeholder for stats content -->
+                <div class="text-center">
+                    <div class="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 21c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9zm-.5-13h1v4h-1zm0 6h1v4h-1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-blue-900 mb-2">50K+</h3>
+                    <p class="text-gray-600">Users Helped</p>
+                </div>
+                <!-- Repeat similar sections for other stats -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Our Services</h2>
+            <div class="flex justify-center mb-8 space-x-4">
+                <button class="px-6 py-2 rounded-full transition">All</button>
+                <button class="px-6 py-2 rounded-full transition">Family</button>
+                <button class="px-6 py-2 rounded-full transition">Property</button>
+                <button class="px-6 py-2 rounded-full transition">Employment</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 21c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9zm-.5-13h1v4h-1zm0 6h1v4h-1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Family Law</h3>
+                    <p class="text-gray-600">Marriage, divorce, child custody, and domestic relations</p>
+                </div>
+                <!-- Repeat similar sections for other services -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Section -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <div id="chat-button"
+            class="bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-transform duration-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21 1H3c-1.1 0-1.99.9-1.99 2L1 21l4-4h15c1.1 0 1.99-.9 1.99-2V3c0-1.1-.9-2-2-2z"></path>
+            </svg>
+        </div>
+
+        <!-- Chat Interface (Hidden initially) -->
+        <div id="chat-interface"
+            class="bg-white rounded-xl shadow-2xl w-96 fixed bottom-6 right-6 z-50 transform translate-y-full transition-transform duration-300">
+            <div class="bg-blue-600 p-4 rounded-t-xl flex justify-between items-center">
+                <h3 class="text-white font-bold">Legal Assistant</h3>
+                <button id="close-chat" class="text-white hover:text-blue-100">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18 6l-12 12m0-12l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="chat-messages" class="h-96 overflow-y-auto p-4 space-y-4">
+                <!-- Messages will be dynamically inserted here -->
+            </div>
+            <form id="chat-form" class="p-4 border-t">
+                <div class="relative">
+                    <input id="chat-input" type="text" placeholder="Type your legal question..."
+                        class="w-full p-3 pr-12 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-600">
+                    <button type="submit"
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 text-blue-600 hover:text-blue-700">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 10l5 5h7v4l5-5-5-5v4H8z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">About Loya</h3>
+                    <p class="text-gray-400">Empowering Ugandan citizens with free AI-powered legal support and
+                        guidance.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">How It Works</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Legal Areas</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Family Law</li>
+                        <li class="text-gray-400">Property Rights</li>
+                        <li class="text-gray-400">Employment Law</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>support@loya.ug</li>
+                        <li>Toll-free: 0800-LOYA</li>
+                        <li>Kampala, Uganda</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Loya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            });
+        });
+
+        // Sticky navigation bar effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+
+        // Chat functionality simulation
+
+        // Add your JavaScript functionality here
+        let chatOpen = false;
+        const chatButton = document.getElementById('chat-button');
+        const chatInterface = document.getElementById('chat-interface');
+        const closeChat = document.getElementById('close-chat');
+        const chatMessages = document.getElementById('chat-messages');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+
+        chatButton.addEventListener('click', () => {
+            chatOpen = true;
+            chatInterface.classList.replace('translate-y-full', 'translate-y-0');
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatOpen = false;
+            chatInterface.classList.replace('translate-y-0', 'translate-y-full');
+        });
+
+        // chatForm.addEventListener('submit', (e) => {
+        //     e.preventDefault();
+        //     const message = chatInput.value.trim();
+        //     if (message) {
+        //         const userMessage = document.createElement('div');
+        //         userMessage.classList.add('flex', 'justify-end');
+        //         userMessage.innerHTML = `<div class="max-w-[80%] p-3 rounded-lg bg-blue-600 text-white">${message}</div>`;
+        //         chatMessages.appendChild(userMessage);
+        //         chatInput.value = '';
+
+        //         const botMessage = document.createElement('div');
+        //         botMessage.classList.add('flex', 'justify-start');
+        //         botMessage.innerHTML = `<div class="max-w-[80%] p-3 rounded-lg bg-gray-100">Thank you for your query. Our assistant will respond shortly.</div>`;
+        //         chatMessages.appendChild(botMessage);
+
+        //         chatMessages.scrollTop = chatMessages.scrollHeight;
+        //     }
+        // });
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const userMessage = chatInput.value.trim();
+
+            if (userMessage) {
+                addMessage('You', userMessage);
+                chatInput.value = '';
+
+                // Simulated bot response
+                setTimeout(() => {
+                    generateBotResponse(userMessage);
+                }, 500);
+            }
+        });
+
+        function addMessage(sender, message) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('chat-message');
+            messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function generateBotResponse(userMessage) {
+            const responses = {
+                hello: "Hi there! How can I assist you today?",
+                services: "We offer a wide range of web development services.",
+                help: "Sure! Ask me anything.",
+            };
+
+            const defaultResponse = "I'm not sure how to respond to that. Try asking about our services!";
+            const botResponse = responses[userMessage.toLowerCase()] || defaultResponse;
+
+            addMessage('Bot', botResponse);
+        }
+    </script>
+
+</body>
+
+</html>
